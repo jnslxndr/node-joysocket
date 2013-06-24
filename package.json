@@ -1,0 +1,16 @@
+{
+  "name": "node-joysocket",
+  "version": "0.0.0",
+  "description": "A simple joystick to websocket module.",
+  "main": "index.js",
+  "dependencies": {
+    "node-hid": "~0.2.3",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "run": "node index.js && exit 1"
+  },
+  "author": "jens alexander ewald",
+  "license": "GPL"
+}

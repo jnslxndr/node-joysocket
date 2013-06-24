@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>JoySocket</title>
+</head>
+<body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io.connect('http://localhost:4242');
+    socket.on('gamepad', function (data) {
+      console.log(data);
+    });
+    socket.on('gamepad.button', function (data) {
+      console.log("button:",data);
+    });
+    socket.on('gamepad.x', function (data) {
+      console.log("x:",data);
+    });
+    socket.on('gamepad.y', function (data) {
+      console.log("y:",data);
+    });
+  </script>
+</body>
+</html>
